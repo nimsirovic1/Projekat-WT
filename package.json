@@ -1,0 +1,31 @@
+{
+  "name": "wt2018",
+  "version": "1.0.0",
+  "description": "**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**",
+  "main": "addGodina.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://nimsirovic1@bitbucket.org/nimsirovic1/wt18ni17838.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/nimsirovic1/wt18ni17838#readme",
+  "dependencies": {
+    "accept": "^3.1.3",
+    "accepts": "^1.3.5",
+    "body-parser": "^1.18.3",
+    "cheerio": "^1.0.0-rc.2",
+    "csv-writer": "^1.2.0",
+    "express": "^4.16.4",
+    "filehound": "^1.16.5",
+    "json2csv": "^4.3.2",
+    "multer": "^1.4.1",
+    "mysql2": "^1.6.4",
+    "pug": "^2.0.3",
+    "sequelize": "^4.42.0"
+  },
+  "devDependencies": {}
+}

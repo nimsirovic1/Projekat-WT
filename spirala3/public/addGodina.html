@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+        <TITLE>Dodavanje godine</TITLE>
+        <link rel="stylesheet" type="text/css" href="addGodinaStil.css">
+        <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <script src="addGodina.js"></script>
+        <script src="validacija.js"></script>
+    </HEAD>
+    <BODY>
+        <div id="header">
+            <div id="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <div id="meni">
+                    <ul>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="studenti.html">Pregled studenata</a></li>
+                    <li><a href="zadaci.html">Odabir vježbe</a></li>
+                    <li><a href="commiti.html">Pregled commita</a></li>
+                    <li><a href="addZadatak.html">Dodavanje zadatka</a></li>
+                    <li><a href="addVjezba.html">Dodavanje vježbe/spirale</a></li>
+                    <li><a href="addStudent.html">Dodavanje studenata</a></li>
+                    <li><a href="addGodina.html">Dodavanje godine</a></li>
+                    </ul>
+            </div>
+            <h1>Dodavanje godine</h1>
+        </div>
+        <div id="pomocni" class="klasa">
+            <div id="side" class="zaSide">
+                <h3>Unos godine:</h3>
+                <br>
+                <div id="sidePom">
+                    <form method="POST" action="/addGodina">
+                    <h4>Naziv godine</h4>
+                    <br>
+                    <input type="text" name="nazivGod" class="inputi" required id="god">
+                    <br>
+                    <h4>Nazivi repozitorija vježbe</h4>
+                    <br>
+                    <input type="text" name="nazivRepVje" class="inputi" required id="rep1">
+                    <br>
+                    <h4>Nazivi repozitorija spirale</h4>
+                    <br>
+                    <input type="text" name="nazivRepSpi" class="inputi" required id="rep2">
+                    <br>
+                    <input type="submit" name="ponisti" value="Poništi" class="submit">
+                    
+                        <input type="submit" name="unesi" value="Unesi" class="submit"  id="unesi" onclick="return klikAddGodina();">
+                   
+                    <div id="error2"></div>
+                </form>
+                </div>
+            </div>
+            
+            <div id="glavniSadrzaj" class="zaGlavni"> 
+               <div id="godina" class="godina">
+                    <h3>2015/16</h3>
+                    <h4>Broj studenata:</h4>
+                     <p>90</p>
+                    <br>
+                    <h4>Broj vježbi:</h4>
+                    <p>10</p>
+                    <br>
+                    <h4>Broj spirala:</h4>
+                    <p>4</p>
+                    <br>
+               </div>
+               <div class="godina" id="drugi">
+                    <h3>2016/17</h3>
+                    <h4>Broj studenata:</h4>
+                     <p>90</p>
+                    <br>
+                    <h4>Broj vježbi:</h4>
+                    <p>10</p>
+                    <br>
+                    <h4>Broj spirala:</h4>
+                    <p>4</p>
+                    <br>
+               </div>
+               <div class="godina" id="treci"></div>
+               
+               <div class="godina" id="cetvrti"></div>
+            </div>
+        </div>
+        <div id="footer">
+                <p>Web tehnologije 2018/19</p>
+        </div>
+    </BODY>
+</HTML>

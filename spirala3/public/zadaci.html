@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+        <TITLE>Zadaci</TITLE>
+        <link rel="stylesheet" type="text/css" href="zadaciStil.css">
+        <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <script src="zadaci.js"></script>
+        <script src="validacija.js"></script>
+    </HEAD>
+    <BODY>
+        <div id="header">
+            <div id="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <div id="meni">
+                    <ul>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="studenti.html">Pregled studenata</a></li>
+                            <li><a href="zadaci.html">Odabir vježbe</a></li>
+                            <li><a href="commiti.html">Pregled commita</a></li>
+                            <li><a href="addZadatak.html">Dodavanje zadatka</a></li>
+                            <li><a href="addVjezba.html">Dodavanje vježbe/spirale</a></li>
+                            <li><a href="addStudent.html">Dodavanje studenata</a></li>
+                            <li><a href="addGodina.html">Dodavanje godine</a></li>
+                     </ul>
+            </div>
+            <h1>Odabir vježbe</h1>
+        </div>
+        <div id="pomocni" class="klasa">
+                <div id="cetvrtina1" class="cetvrtina">
+                        <h3>Godina</h3>     
+                        <div id="wrapper">
+                            <div class="scrollbar" id="style-default"> 
+                                <ul>                
+                                    <li>Godina 2014/15</li>
+                                    <li>Godina 2015/16</li>
+                                    <li>Godina 2016/17</li>
+                                    <li>Godina 2017/18</li>
+                                    <li>Godina 2018/19</li> 
+                                </ul>   
+                                <div class="force-overflow"></div>
+                            </div>
+                        </div>         
+                    </div>
+
+                    <div id="cetvrtina2" class="cetvrtina">
+                            <h3>Student</h3>   
+                            <form action="#">
+                                <input type="text" name="query" id="ime4">
+                                <br>
+                                <button type="button" name="search" id="search" onclick="klik()">Search</button>
+                                <div id="error5"></div>
+                            </form>  
+                            <div id="wrapper2">
+                                <div class="scrollbar" id="style-default2"> 
+                                    <ul>                
+                                        <li>Ime i prezime | index</li>
+                                        <li>Neko Nekić | 12345</li>
+                                        <li>Neko Nekić | 12345</li>
+                                        <li>Neko Nekić | 12345</li>
+                                        <li>Neko Nekić | 12345</li> 
+                                    </ul>   
+                                    <div class="force-overflow"></div>
+                                </div>
+                            </div>    
+                    </div>
+                    <div id="polovina1" class="polovina">
+                        
+                       <div id="prviF" class="folder">                          
+                            <div class="naslov"><h3>Vježbe</h3></div>
+                            <div class="naslov"></div>
+                            <div class="naslov"></div>
+                            
+                            <div class="item">Vježba 1</div>
+                            <div class="item">Vježba 2</div>
+                            <div class="item">Vježba 3</div>
+                            <div class="item">Vježba 4</div>
+                            <div class="item">Vježba 5</div>
+                            <div class="item">Vježba 6</div>
+                       </div>
+                       <div id="drugiF" class="folder">                            
+                            <div class="naslov"><h3>Spirale</h3></div>
+                            <div class="naslov"></div>
+                            <div class="naslov"></div>
+                            <div class="item">Spirala 1</div>
+                            <div class="item">Spirala 2</div>
+                            <div class="item">Spirala 3</div>
+                            <div class="item">Spirala 4</div>                                                       
+                       </div>
+                    </div>
+        </div>
+        
+        <div id="footer">
+            <p>Web tehnologije 2018/19</p>
+        </div>
+
+    </BODY>
+</HTML>

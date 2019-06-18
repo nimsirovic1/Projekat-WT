@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body { height: 100%; }
+
+#header {
+    background-color: peachpuff;
+    padding: 10px;
+    position: relative;
+    margin: 0;
+    border: 1px solid rgb(6, 6, 59);
+    border-collapse: collapse;
+    border-width: medium thin medium thin; 
+}
+
+#header h1 {
+    margin: 0;
+    color: #756057;
+}
+
+#meni ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#meni { padding: 0; }
+#meni ul li { display: inline; }
+
+a:link {
+    color: #b3a098;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+#logo {
+    padding: 10px;
+    top: 0px;
+    left: 0px;
+}
+
+#footer {
+    background-color: peachpuff;
+    clear: both;
+    margin: 0;
+    padding: 15px;
+}
+
+#footer p {
+    padding: 5px;
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    #header h1 {
+        bottom: 0;
+        left: 0;
+    }
+    .klasa {
+        display: flex;
+        flex-direction: column;
+      }
+      #cetvrtina1 {
+        width: 100%;
+        max-width: 100%;
+        padding-bottom: 50px;
+      }
+      #cetvrtina2 {
+        order: 2;
+        width: 100%;
+        max-width: 100%;     
+        padding-bottom: 50px;
+      }
+     .polovina {
+        order: 3;
+        width: 100%;
+        max-width: 100%;
+      /*  padding-bottom: 50px;*/
+      padding-bottom: 50px;
+      }   
+      
+      .polovina .folder {
+          margin-top: 20px;
+          height: 100%;
+          width: 93%;
+          
+      }
+}
+
+@media only screen and (min-width: 600px) {
+    #header h1 {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        padding-right: 20px;
+        padding-top: 20px;
+       
+    }
+    .cetvrtina {   
+        width: 25%;
+        height: 100%;    
+        position: absolute;
+        margin-top: 0;
+    }
+    #cetvrtina2 {
+       left: 25%;
+    }
+    .polovina {
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    #pomocni {
+        height: 100%; 
+        overflow: hidden;
+        position: relative;
+    }
+    .polovina #prviF {
+        margin-top: 30px;
+        width: 93%;
+        height: 43%;
+        
+    }
+    
+    .polovina #drugiF {
+        margin-top: 30px;
+        width: 93%;
+        height: 43%;
+    }
+}
+
+.cetvrtina {
+    background-color: rgb(214, 212, 226);
+    border: 1px solid rgb(6, 6, 59);
+    border-collapse: collapse;
+    border-width: 0px medium medium 0px; 
+    margin-top: 0;
+}
+
+.cetvrtina h3 {
+    text-align: center;
+    vertical-align: top;
+    margin-top: 30px;
+}
+
+ul {  
+    list-style-type: none;
+    padding: 5px;
+    vertical-align: top;
+} 
+
+ul li {
+   text-align: left;
+   padding: 5px;
+}
+
+ul li:hover {background-color: #f5f5f5;}
+
+.scrollbar
+{	
+	margin: 0 auto;
+	margin-left: 20px;
+	margin-top: 30px;
+	overflow-y: scroll;
+    margin-bottom: 25px;
+    background-color: white;
+    vertical-align: top;
+    border: 1px solid black;
+    
+}
+
+#cetvrtina2 .scrollbar { width: 90%; height: 300px; }
+#cetvrtina1 .scrollbar { width: 80%; height: 364px; }
+
+.force-overflow { min-height: 250px; }
+
+/* #wrapper
+{
+	text-align: center;	
+	margin: 0 auto;
+} */
+
+
+#cetvrtina2 #search {
+    text-align: center; 
+	margin-top: 5px;
+    margin-bottom: 25px;
+    vertical-align: top;
+}
+ 
+#cetvrtina2 input[type="text"],  #cetvrtina2 #search {
+    padding: 3px;
+    width: 90%;
+    float: left;
+    margin-left: 20px;
+}
+
+#error5 {
+    padding-top: 3px;
+    margin-left: 20px; 
+}
+#cetvrtina2 input[type="text"] {
+    margin-top: 15px;
+}
+
+.polovina {
+    background-color: rgb(214, 212, 226);
+    border: 1px solid rgb(6, 6, 59);
+    border-collapse: collapse;
+    border-width: 0px 0px medium 0px; 
+    margin-top: 0;
+}
+
+.polovina .folder .naslov {
+   text-align: left;
+   margin-left: 20px;
+   margin-top: 10px;
+}
+
+ .folder {   
+    margin-left: 20px;
+    box-shadow: 5px 5px 3px grey;
+    display: grid;
+    grid-gap: 2px 5px;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 5px;
+    
+}
+
+.item {
+    margin-left: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgb(6, 6, 59);
+    border-collapse: collapse;
+    border-width: medium medium medium medium; 
+    padding: 20px;
+    color: black;
+    text-align: center;
+    margin-top: 10px;   
+    height: 70%;
+}

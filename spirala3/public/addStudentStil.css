@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body { height: 100%; }
+
+#header {
+    background-color: peachpuff;
+    padding: 10px;
+    position: relative;
+    margin: 0;
+    border: 1px solid rgb(6, 6, 59);
+    border-collapse: collapse;
+    border-width: medium thin medium thin; 
+}
+
+#header h1 {
+    margin: 0;
+    color: #756057;
+}
+
+#meni ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#meni { padding: 0; }
+#meni ul li { display: inline; }
+
+a:link {
+    color: #b3a098;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+#logo {
+    padding: 10px;
+    top: 0px;
+    left: 0px;
+}
+
+#footer {
+    border: 1px solid rgb(6, 6, 59);
+    border-collapse: collapse;
+    border-width: medium 0px 0px 0px;
+    background-color: peachpuff;
+    clear: both;
+    margin: 0;
+    padding: 15px;
+}
+
+#footer p {
+    padding: 5px;
+    margin: 0;
+}
+
+@media only screen and (min-width: 600px) {
+    #header h1 {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        padding-right: 120px;
+        padding-top: 20px;
+        padding-bottom: 70px;
+    }
+   #glavniSadrzaj {
+        width: 85%;
+        margin: 0 auto;    
+        max-width: 85%;    
+        margin-left: 7.5%;
+        display: block;
+        overflow: auto;
+        padding-bottom: 5%;
+}
+
+#glavniSadrzaj #fPojedinacni {
+    padding-bottom: 10%;
+    
+}
+#glavniSadrzaj #fMasovni {
+    padding-bottom: 10%;
+    
+}
+   
+    
+}
+
+@media only screen and (max-width: 600px) {
+    #header h1 {
+        bottom: 0;
+        left: 0;
+    }
+    
+    #glavniSadrzaj {
+        width: 100%;
+        max-width: 100%;
+        
+        display: block;
+        overflow: auto;
+        padding-bottom: 10%;
+       
+   }
+   #glavniSadrzaj #fPojedinacni {
+    padding-bottom: 15%;
+    
+}
+#glavniSadrzaj #fMasovni {
+    padding-bottom: 15%;
+    
+}
+
+  
+}
+
+body {
+    background-color: rgb(159, 156, 175);
+}
+
+#glavniSadrzaj {
+    background-color: rgb(214, 212, 226);
+}
+
+#glavniSadrzaj #fPojedinacni, #fMasovni {
+    background-color: rgb(234, 234, 241);
+    box-shadow: 5px 5px 3px grey;
+    width: 80%;
+    margin: 0 auto;   
+   
+    padding-top: 30px;
+    margin-top: 30px;
+}
+
+#glavniSadrzaj #fPojedinacni #naslov1{
+    text-align: center;
+}
+
+#glavniSadrzaj #fMasovni {
+   
+    margin-top: 30px;
+    padding-top: 30px;
+   
+}
+
+
+
+#glavniSadrzaj #fMasovni #naslov2{
+    text-align: center;
+}
+
+
+#glavniSadrzaj .pomocniDiv, #error {
+    margin-left: 20%;
+    margin-top: 20px;
+    height: 80%;
+    width: 80%;
+    margin: 0 auto;
+   
+  
+}
+
+#error {
+    padding-top: 2.5%;
+}
+
+.pomocniDiv h4 {
+    margin-top: 20px;
+}
+
+.inputi {
+    width: 65%;
+    padding: 5px;
+    margin-top: 0.001px;
+}
+
+.select1 {
+    width: 65%;
+    padding: 5px;
+}
+
+.sub {
+    margin-top: 4%;
+    width: 20%;
+    padding: 8px;
+   margin-right: 24%;
+  float: right;
+  font-size: 11pt;
+}
+
+#csv {
+   font-size: 11pt;
+}
+
+#submit2 {
+    margin-top: 1%;
+}

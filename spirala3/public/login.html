@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+        <TITLE>Login</TITLE>
+        <link rel="stylesheet" type="text/css" href="loginStil.css">
+        <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <script src="login.js"></script>
+        <script src="validacija.js"></script>
+    </HEAD>
+    <BODY>
+        <div id="login">
+            <form id="loginForma" action="#">
+                <label>username</label>
+                <input type="text" name="username" id="username">
+                <br>
+                <br>
+                <label>password</label>
+                <input type="password" name="password" id="password">
+                <br>
+                <br>
+                <button type="button" name="login" id="dugmeLogin" onclick="klik()">Login</button>
+                <div id="loginError"></div>
+            </form>
+        </div>
+    </BODY>
+</HTML>

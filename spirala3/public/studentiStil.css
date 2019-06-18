@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body { height: 100%; }
+
+#header {
+    background-color: peachpuff;
+    padding: 10px;
+    position: relative;
+    margin: 0;
+    border: 1px solid rgb(6, 6, 59);
+    border-collapse: collapse;
+    border-width: medium thin 0px thin; 
+}
+
+#header h1 {
+    margin: 0;
+    color: #756057;
+}
+
+#meni ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#meni { padding: 0; }
+#meni ul li { display: inline; }
+
+a:link {
+    color: #b3a098;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+#logo {
+    padding: 10px;
+    top: 0px;
+    left: 0px;
+}
+
+#footer {
+    background-color: peachpuff;
+    clear: both;
+    margin: 0;
+    padding: 15px;
+}
+
+#footer p {
+    padding: 5px;
+    margin: 0;
+}
+
+@media only screen and (min-width: 600px) {
+    #header h1 {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        padding-right: 20px;
+        padding-top: 20px;
+    }
+    .zaSide {
+        width: 35%;
+        height: 100%;    
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .zaGlavni {
+        width: 65%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    #pomocni {
+        height: 76%; 
+        overflow: hidden;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+      .klasa {
+        display: flex;
+        flex-direction: column;
+      }
+      .zaSide {
+        width: 100%;
+        max-width: 100%;
+        padding-bottom: 50px;
+      }
+     .zaGlavni {
+        order: 2;
+        width: 100%;
+        max-width: 100%;
+        padding-bottom: 50px;
+      }   
+      #header h1 {
+          bottom: 0;
+          left: 0;
+      }
+}
+
+#side {
+    background-color: rgb(214, 212, 226);
+    float: left;
+}
+
+
+#side h3 {
+    text-align: center;
+    vertical-align: top;
+    margin-top: 20px;
+}
+
+#side ul {
+   /* border: 1px solid black;*/
+   /* width: 45%;*/
+    list-style-type: none;
+    padding: 5px;
+   /* margin: 0 auto;*/
+   /* margin-left: auto;
+    margin-right: auto;*/
+    vertical-align: top;
+   /* background-color: white;
+    padding-bottom: 150px;
+    margin-top: 30px;*/
+  
+} 
+
+#side ul li {
+   text-align: left;
+   padding: 5px;
+}
+
+#side ul li:hover {background-color: #f5f5f5;}
+
+#glavniSadrzaj {
+    background-color: rgb(159, 156, 175);
+    float: right;      
+    border: 1px solid rgb(6, 6, 59);
+    border-collapse: collapse;
+    border-width: medium 0px 0px 0px; 
+}
+
+#glavniSadrzaj table, th, td {
+    border: 1px solid black;
+}
+
+#glavniSadrzaj table {
+    border-collapse: collapse;
+    margin-left: 15px;
+    margin-top: 40px;
+    margin-right: 25px;
+    
+    padding: 20px;
+}
+
+#glavniSadrzaj th {    
+    background-color: rgb(172, 182, 185);
+    padding: 10px;
+}
+
+#glavniSadrzaj td {    
+    padding: 10px;
+}
+
+#glavniSadrzaj tr {
+    text-align: left;
+}
+
+#glavniSadrzaj td a:link {
+    text-decoration: none;
+    color: black;
+}
+
+#glavniSadrzaj tr:hover {background-color: #f5f5f5;}
+
+.scrollbar
+{
+	
+	margin: 0 auto;
+	height: 300px;
+	width: 45%;
+	margin-top: 30px;
+	overflow-y: scroll;
+    margin-bottom: 25px;
+  /*  margin-top: 30px;
+    margin-left: 50px;*/
+   /* margin: 0 auto;*/
+    background-color: white;
+    vertical-align: top;
+    border: 1px solid black;
+    
+}
+
+.force-overflow
+{
+    min-height: 250px;
+    
+}
+
+#wrapper
+{
+	text-align: center;
+	
+	margin: 0 auto;
+}
+

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+        <TITLE>Dodavanje vježbe/spirale</TITLE>
+        <link rel="stylesheet" type="text/css" href="addVjezbaStil.css">
+        <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <script src="addVjezba.js"></script>
+        <script src="validacija.js"></script>
+        <script src="CokoladaAjax.js"></script>
+    </HEAD>
+    <BODY>
+        
+        <div id="header">
+            <div id="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <div id="meni">
+                    <ul>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="studenti.html">Pregled studenata</a></li>
+                            <li><a href="zadaci.html">Odabir vježbe</a></li>
+                            <li><a href="commiti.html">Pregled commita</a></li>
+                            <li><a href="addZadatak.html">Dodavanje zadatka</a></li>
+                            <li><a href="addVjezba.html">Dodavanje vježbe/spirale</a></li>
+                            <li><a href="addStudent.html">Dodavanje studenata</a></li>
+                            <li><a href="addGodina.html">Dodavanje godine</a></li>
+                    </ul>
+            </div>
+            <h1>Dodavanje vježbe/spirale</h1>
+        </div>
+        <div id="pom">
+            <div id="glavniSadrzaj">
+                <form id="fPostojeca" name="fPostojeca" action="http://localhost:8080/addVjezba" method="POST">
+                    <h2 id="naslov1">Dodavanje postojeće vježbe/spirale</h2>
+                   <div class="pomocniDiv">
+                        <h4 id="god">Godina</h4>
+                        <br>                        
+                        <select class="select1" name="sGodine" ><!--<option value="2018/19" id="sGodine">2018/19</option>--></select>
+                        <br>
+                        <h4 id="spirale">Vježbe/Spirale</h4>
+                        <br>
+                        <select class="select1" name="sVjezbe"><option value="Vježba X" id="sVjezbe">Vježba X</option></select>
+                        <br>
+                        <input class="sub" type="submit" name="submit" value="Dodaj">
+                        <br>
+                   </div>
+                </form>
+                <form id="fNova" name="fNova"  action="http://localhost:8080/addVjezba" method="POST">
+                    <h2 id="naslov2">Nova vježba/spirala</h2>
+                    <div class="pomocniDiv">
+                        <h4 id="vj">Naziv vježbe</h4>
+                        <br>          
+                        <input id="tb" type="text" name="naziv" required>
+                        <br>
+                        <h4 id="v">Godina</h4>   
+                        <br>           
+                        <select class="select1" name="sGodine"><option value="2018/19">2018/19</option></select>
+                        <br>
+                        
+                        <ul id="lista">
+                            <li>Zadatak 1</li>
+                            <li>Zadatak 2</li>
+                            <li>Zadatak 3</li>
+                        </ul>
+                        <br>
+                      <!--  <select id="sel2" name="sZadatak"><option value="Zadatak X">Zadatak X</option></select>
+                        <input type="button"  id="dugme" name="dZadatak" value="Dodaj zadatak">
+                        <br>-->
+                        <input id="ch" type="checkbox" name="spirala" value="true">Spirala
+                        <button type="submit" class="sub" name="submit">Dodaj</button>
+                        <div id="error4"></div>
+                   </div>
+                </form>
+                <form name="fPoveziZadatak" action="http://localhost:8080/vjezba/:idVjezbe/zadatak" method="POST">
+                    <div class="pomocniDiv">
+                            <select id="sel3" name="sVjezbe" value="idVjezbe"></select>
+                            <select id="sel2" name="sZadatak"></select>
+                            <input type="submit" id="dugme" name="dZadatak" value="Dodaj zadatak">
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+        <div id="footer">
+                <p>Web tehnologije 2018/19</p>
+        </div>
+    </BODY>
+</HTML>

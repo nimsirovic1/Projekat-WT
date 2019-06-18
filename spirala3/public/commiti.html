@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+        <TITLE>Commiti</TITLE>
+        <link rel="stylesheet" type="text/css" href="commitiStil.css">
+        <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+       
+    </HEAD>
+    <BODY>
+        <div id="header">
+            <div id="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <div id="meni">
+                    <ul>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="studenti.html">Pregled studenata</a></li>
+                            <li><a href="zadaci.html">Odabir vježbe</a></li>
+                            <li><a href="commiti.html">Pregled commita</a></li>
+                            <li><a href="addZadatak.html">Dodavanje zadatka</a></li>
+                            <li><a href="addVjezba.html">Dodavanje vježbe/spirale</a></li>
+                            <li><a href="addStudent.html">Dodavanje studenata</a></li>
+                            <li><a href="addGodina.html">Dodavanje godine</a></li>
+                    </ul>
+            </div>
+            <h1>Pregled commita</h1>
+        </div>
+        
+        <div id="glavniSadrzaj">
+            <p>Student: Neko Nekić, 1234</p>
+            <br>
+            <p>Naziv vježbe/spirale: Vježba 1</p>
+            <br>
+            <p>Repozitorij:<a href="https://bitbucket.org">Hyperlink</a></p>
+            <form id="forma" action="#">
+                    <h4>Unesite broj zadataka:</h4>
+                    <br>
+                    <input type="number" name="brojZ" id="brojZad">
+                    <br>
+                    <input type="submit" name="dugme" id="dugmeSub" value="Dodaj" onclick="klik()">
+            </form>
+            <div id="zaTabelu"></div>
+           
+           <table id="commiti">
+            <tr>
+                <th>Naziv zadatka</th>
+                <th colspan="8">Commiti</th>
+            </tr>
+            <tr>
+                <td><a href="https://docs.google.com/document/d/1ZjkBwWG_gsRokjp7oGwDpFm40qXM1tB9AwcV5_Qv8W8/edit">Zadatak 1</a></td>
+                <td><a href="https://bitbucket.org">1</a></td>
+                <td><a href="https://bitbucket.org">2</a></td>
+                <td><a href="https://bitbucket.org">3</a></td>
+                <td><a href="https://bitbucket.org">4</a></td>
+                <td><a href="https://bitbucket.org">5</a></td>
+                <td><a href="https://bitbucket.org">6</a></td>
+                <td><a href="https://bitbucket.org">7</a></td>
+                <td><a href="https://bitbucket.org">8</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://docs.google.com/document/d/1ZjkBwWG_gsRokjp7oGwDpFm40qXM1tB9AwcV5_Qv8W8/edit">Zadatak 2</a></td>
+                <td><a href="https://bitbucket.org">1</a></td>
+                <td><a href="https://bitbucket.org">2</a></td>
+                <td><a href="https://bitbucket.org">3</a></td>
+                <td><a href="https://bitbucket.org">4</a></td>
+                <td colspan="4"></td>
+            </tr>
+            <tr>
+                <td><a href="https://docs.google.com/document/d/1ZjkBwWG_gsRokjp7oGwDpFm40qXM1tB9AwcV5_Qv8W8/edit">Zadatak 3</a></td>
+                <td><a href="https://bitbucket.org">1</a></td>
+                <td colspan="7"></td>
+            </tr>
+            <tr>
+                <td><a href="https://docs.google.com/document/d/1ZjkBwWG_gsRokjp7oGwDpFm40qXM1tB9AwcV5_Qv8W8/edit">Zadatak 4</a></td>
+                <td colspan="8"></td>
+            </tr>
+            <tr>
+                <td><a href="https://docs.google.com/document/d/1ZjkBwWG_gsRokjp7oGwDpFm40qXM1tB9AwcV5_Qv8W8/edit">Zadatak 5</a></td>
+                <td colspan="8"></td>
+            </tr>
+            <tr>
+                <td><a href="https://docs.google.com/document/d/1ZjkBwWG_gsRokjp7oGwDpFm40qXM1tB9AwcV5_Qv8W8/edit">Zadatak 6</a></td>
+                <td colspan="8"></td>
+            </tr>
+            <tr>
+                <td><a href="https://docs.google.com/document/d/1ZjkBwWG_gsRokjp7oGwDpFm40qXM1tB9AwcV5_Qv8W8/edit">Zadatak 7</a></td>
+                <td colspan="8"></td>
+            </tr>
+            </table> 
+        </div>
+        
+    
+        <div id="footer">
+            <p>Web tehnologije 2018/19</p>
+        </div>
+    </BODY>
+</HTML>

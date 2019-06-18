@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+        <TITLE>Dodavanje zadatka</TITLE>
+        <link rel="stylesheet" type="text/css" href="addZadatakStil.css">
+        <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <script src="addZadatak.js"></script>
+        <script src="validacija.js"></script>
+    </HEAD>
+    <BODY>
+        <div id="header">
+            <div id="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <div id="meni">
+                    <ul>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="studenti.html">Pregled studenata</a></li>
+                            <li><a href="zadaci.html">Odabir vježbe</a></li>
+                            <li><a href="commiti.html">Pregled commita</a></li>
+                            <li><a href="addZadatak.html">Dodavanje zadatka</a></li>
+                            <li><a href="addVjezba.html">Dodavanje vježbe/spirale</a></li>
+                            <li><a href="addStudent.html">Dodavanje studenata</a></li>
+                            <li><a href="addGodina.html">Dodavanje godine</a></li>
+                    </ul>
+            </div>
+            <h1>Dodavanje zadatka</h1>
+        </div>
+        <div id="pom">
+                <div id="glavniSadrzaj">
+                        <form id="noviZadatak" action="/addZadatak" enctype="multipart/form-data" method="POST">
+                                <h3>Novi zadatak</h3>
+                            <table>
+                            <tr>
+                                <td><h5 id="prvi">Naziv zadatka</h5></td>
+                                <td><br></td>
+                            </tr>
+                            <tr>
+                                    <td><input type="text" name="naziv" id="naziv1" required></td>
+                                    <td><br></td>
+                            </tr>
+
+                            <tr>
+                                    <td><h5 id="drugi">Tekst postavke*</h5> </td>
+                                    <td><br></td>
+                            </tr>
+                            <tr>
+                                    <td><input type="file" name="postavka" required></td>
+                                    <td><br></td>
+                            </tr>
+                            <tr>
+                                    <td><h5 id="treci">Vježbe/Spirale</h5></td>
+                                    <td><br></td>
+                            </tr>
+                          <!--  <tr>
+                                    <td><select>
+                                            <option value="Vježba X">Vježba X</option>
+                                        </select></td>
+                                    <td><br></td>
+                            </tr> -->
+                           
+                           
+                            </table>
+                           
+                                <input type="submit" value="Dodaj" onclick="return Klik();">
+                            
+                             
+                             <div id="error3"></div>                                
+                        </form>
+                    </div>
+        </div>
+           
+        
+        <div id="footer">
+                <p>Web tehnologije 2018/19</p>
+        </div>
+    </BODY>
+</HTML>
